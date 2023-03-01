@@ -1,0 +1,17 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+input{
+    border-width: 0 0 1px;
+    outline:0;
+    text-align: center; 
+    width:150px;
+}
+input,
+input::placeholder {
+    font-size: 14px;
+}
+li{
+    font-size:small;
+}
+
+

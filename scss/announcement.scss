@@ -1,0 +1,17 @@
+$success :	#17ad49;
+$warning: #FF4500;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/buttons";
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":   #17ad49,
+  "info":       $info,
+  "warning":    #FF4500,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);

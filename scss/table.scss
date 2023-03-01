@@ -1,0 +1,56 @@
+$warning: #FF4500;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/tables";
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+thead {
+    border-bottom-width: 2px;
+  }
+th{
+    font-weight: 700;
+    font-size: 10px;
+}
+
+td{
+    font-weight: 500;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.active{
+    background-color: #e6ffee !important;
+}
+.badge{
+    width: 30px;
+}
+
+input{
+    border-width: 0 0 1px;
+    outline:0;
+    text-align: left; 
+    width:150px;
+}
+// input,
+// input::placeholder {
+//     font-size: 14px;
+// }
+// li{
+//     font-size:small;
+// }
+
+#filtersubmit{
+    position: absolute;
+    max-width: 26%;
+    margin-bottom: 10px;
+    padding: 10px;
+    min-width: 40px;
+    color:grey
+}
+#circletable{
+    color: blue
+}
