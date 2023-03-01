@@ -27,7 +27,7 @@ const Navbar = () => {
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    aria-expanded="true"
                   >
                     My Request
                   </a>
@@ -59,7 +59,7 @@ const Navbar = () => {
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    aria-expanded="true"
                   >
                     My Team
                   </a>
@@ -91,7 +91,7 @@ const Navbar = () => {
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    aria-expanded="true"
                   >
                     Company
                   </a>
@@ -123,7 +123,7 @@ const Navbar = () => {
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    aria-expanded="true"
                   >
                     Administration Tools
                   </a>
@@ -155,7 +155,7 @@ const Navbar = () => {
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    aria-expanded="true"
                   >
                     Maintenance
                   </a>
@@ -217,7 +217,7 @@ const Navbar = () => {
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    aria-expanded="true"
                   >
                     Admin
                   </a>
