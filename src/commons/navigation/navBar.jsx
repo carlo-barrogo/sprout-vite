@@ -182,7 +182,7 @@ const Navbar = () => {
                 </li>
                 <form class="text-center">
                   <input
-                    class=" bg-transparent"
+                    class="searchnav bg-transparent"
                     placeholder="employee search"
                     aria-label="Search"
                   />

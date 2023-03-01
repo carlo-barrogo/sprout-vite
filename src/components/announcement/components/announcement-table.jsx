@@ -1,4 +1,5 @@
 import React from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../../../../scss/table.scss";
 import {
@@ -6,6 +7,9 @@ import {
   faBookmark,
   faMobileScreen,
   faMagnifyingGlass,
+  faPlay,
+  faForwardStep,
+  faBackwardStep,
 } from "@fortawesome/free-solid-svg-icons";
 import { tableData } from "../tableData";
 import moment from "moment";
@@ -23,6 +27,20 @@ const AnnouncementTable = () => {
     {
       label: "Three",
       value: 3,
+    },
+  ];
+  const filterChoicesItem = [
+    {
+      label: "10",
+      value: 10,
+    },
+    {
+      label: "20",
+      value: 20,
+    },
+    {
+      label: "30",
+      value: 30,
     },
   ];
 
@@ -109,6 +127,7 @@ const AnnouncementTable = () => {
         </div>
         <div class="d-flex gap-2 col-sm">
           <select class="form-select  w-20 ">
+            <option selected>Filter By</option>
             {filterChoices.map((fc) => (
               <option value={fc.value}>{fc.label}</option>
             ))}
@@ -193,6 +212,47 @@ const AnnouncementTable = () => {
               })}
             </tbody>
           </table>
+          <div class="container">
+            <div class="d-flex justify-content-between mb-3">
+              <div class="d-flex gap-3 ">
+                <small class="sm-18">Items per page</small>
+                <div>
+                  <select class="form-select form-select-sm">
+                    {filterChoicesItem.map((fc) => (
+                      <option value={fc.value}>{fc.label}</option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between">
+                {/* <div>
+                  <FontAwesomeIcon icon={faBackwardStep} />
+                </div>
+                <div>
+                  <FontAwesomeIcon icon={faPlay} />
+                </div>
+                <div class="d-flex justify-content-between">
+                  <small>Page </small>
+                  <input
+                    id="pagesearch"
+                    class="form-control-sm"
+                    placeholder="Search..."
+                    aria-label="Search"
+                    value="1"
+                  />
+                  of 1
+                </div>
+                <div>
+                  <FontAwesomeIcon icon={faPlay} />
+                </div>
+                <div>
+                  <FontAwesomeIcon icon="fa-brands fa-twitter" />
+                </div> */}
+              </div>
+              <small>Showing 1-10 of 1</small>
+            </div>
+          </div>
         </div>
       </div>
     </div>
