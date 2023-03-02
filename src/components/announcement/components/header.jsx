@@ -4,9 +4,9 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <div class="container-fluid">
-      <div class="top-0 start-0 w-100">
-        <div class="d-flex justify-content-between">
+    <div className="container-fluid">
+      <div className="top-0 start-0 w-100">
+        <div className="d-flex justify-content-between">
           <div>
             <h5>Announcements</h5>
             <p>
@@ -15,7 +15,7 @@ const Header = () => {
             </p>
           </div>
           <div>
-            <button type="button" class="btn btn-success text-light ">
+            <button type="button" className="btn btn-success text-light ">
               <FontAwesomeIcon icon={faPlus} /> Post an Announcement
             </button>
           </div>

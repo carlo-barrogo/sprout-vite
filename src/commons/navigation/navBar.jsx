@@ -1,6 +1,6 @@
 import React from "react";
 import reactLogo from "../../assets/sprout-logo.jpg";
-import "../../../scss/navbar.scss";
+// import "../../../scss/navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
@@ -8,21 +8,24 @@ import { faBell } from "@fortawesome/free-regular-svg-icons";
 const Navbar = () => {
   return (
     <div
-      class="position-absolute start-0 top-0 w-100"
+      className="position-absolute start-0 top-0 w-100"
       style={{ background: "#333333" }}
     >
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid d-flex justify-content-between ">
+      <nav className="navbar navbar-expand-lg">
+        <div className="container-fluid d-flex justify-content-between ">
           <div>
-            <a class="navbar-brand" href="#" />
+            <a className="navbar-brand" href="#" />
             <img src={reactLogo} alt="" width="150" height="50" />
           </div>
           <div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li class="nav-item dropdown">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li className="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle link-light"
+                    className="nav-link dropdown-toggle link-light"
                     href="#"
                     id="navbarDropdown"
                     role="button"
@@ -31,30 +34,33 @@ const Navbar = () => {
                   >
                     My Request
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    className="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                     <li>
-                      <hr class="dropdown-divider" />
+                      <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <li className="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle link-light"
+                    className="nav-link dropdown-toggle link-light"
                     href="#"
                     id="navbarDropdown"
                     role="button"
@@ -63,30 +69,33 @@ const Navbar = () => {
                   >
                     My Team
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    className="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                     <li>
-                      <hr class="dropdown-divider" />
+                      <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <li className="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle link-light"
+                    className="nav-link dropdown-toggle link-light"
                     href="#"
                     id="navbarDropdown"
                     role="button"
@@ -95,30 +104,33 @@ const Navbar = () => {
                   >
                     Company
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    className="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                     <li>
-                      <hr class="dropdown-divider" />
+                      <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <li className="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle link-light"
+                    className="nav-link dropdown-toggle link-light"
                     href="#"
                     id="navbarDropdown"
                     role="button"
@@ -127,30 +139,33 @@ const Navbar = () => {
                   >
                     Administration Tools
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    className="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                     <li>
-                      <hr class="dropdown-divider" />
+                      <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <li className="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle link-light"
+                    className="nav-link dropdown-toggle link-light"
                     href="#"
                     id="navbarDropdown"
                     role="button"
@@ -159,34 +174,37 @@ const Navbar = () => {
                   >
                     Maintenance
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    className="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                     <li>
-                      <hr class="dropdown-divider" />
+                      <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                   </ul>
                 </li>
-                <form class="text-center">
+                <form className="text-center">
                   <input
-                    class="searchnav bg-transparent"
+                    className="searchnav bg-transparent"
                     placeholder="employee search"
                     aria-label="Search"
                   />
-                  <button class="btn" type="submit">
+                  <button className="btn" type="submit">
                     <FontAwesomeIcon
                       icon={faMagnifyingGlass}
                       style={{ color: "grey", fontSize: 20 }}
@@ -194,7 +212,7 @@ const Navbar = () => {
                   </button>
                 </form>
                 <li>
-                  <button class="btn " type="submit">
+                  <button className="btn " type="submit">
                     <FontAwesomeIcon
                       icon={faBell}
                       style={{ color: "grey", fontSize: 20 }}
@@ -202,7 +220,7 @@ const Navbar = () => {
                   </button>
                 </li>
                 <li>
-                  <button class="btn" type="submit">
+                  <button className="btn" type="submit">
                     <FontAwesomeIcon
                       icon={faCircle}
                       style={{ color: "grey", fontSize: 20 }}
@@ -210,9 +228,9 @@ const Navbar = () => {
                   </button>
                 </li>
 
-                <li class="nav-item dropdown">
+                <li className="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle text-info link-light"
+                    className="nav-link dropdown-toggle text-info link-light"
                     href="#"
                     id="navbarDropdown"
                     role="button"
@@ -221,22 +239,25 @@ const Navbar = () => {
                   >
                     Admin
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    className="dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>
                     <li>
-                      <hr class="dropdown-divider" />
+                      <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Dropdown-Item
                       </a>
                     </li>

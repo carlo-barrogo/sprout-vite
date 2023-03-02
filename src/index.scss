@@ -1,0 +1,135 @@
+$success: #34b464;
+$warning:#ff7f00;
+$badge-border-radius: 20px;
+$badge-font-size:  1em ;
+$badge-padding-y:.10em ;
+$badge-padding-x:.65em ;
+$badge-font-weight: 700;
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+// $theme-colors: (
+//   "primary":    $primary,
+//   "secondary":  $secondary,
+//   "success":   #17ad49,
+//   "info":       $info,
+//   "warning":    #FF4500,
+//   "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+// );
+
+// input{
+//     border-width: 0 0 1px;
+//     outline:0;
+//     text-align: center; 
+//     width:150px;
+//     color: white;
+// }
+
+input::placeholder {
+    font-size: 14px;
+    
+}
+li{
+    font-size:small;
+}
+
+
+
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+thead {
+    border-bottom-width: 2px;
+  }
+th{
+    font-weight: 700;
+    font-size: 10px;
+}
+
+td{
+    font-weight: 500;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.nav-pills{
+    font-weight: 500;
+}
+.searchnav{
+    border-width: 0 0 1px;
+    outline:0;
+    text-align: center; 
+    width:150px;
+    color: white;
+}
+
+.active{
+    background-color: #e6ffee !important;
+}
+.badge{
+    width: 30px;
+}
+
+.headerinput{
+    outline:0;
+    text-align: left; 
+    width:250px;
+    
+}
+.pageinput{
+    border-width: 1px 1px 1px;
+    border-radius: 3px;
+    outline:0;
+    text-align: center; 
+    height: 20px;
+    width:40px;
+    margin-top: 1px;
+    color:grey
+}
+
+.pagenumber div p{
+    font-size: 14px;
+    color:#ccd4d4
+}
+
+.rotatedplay{
+    height: 15px;
+    transform: rotate(300deg);
+}
+// input,
+// input::placeholder {
+//     font-size: 14px;
+// }
+// li{
+//     font-size:small;
+// }
+
+#filtersubmit{
+    position: absolute;
+    max-width: 26%;
+    margin-bottom: 10px;
+    padding: 10px;
+    min-width: 40px;
+    color:grey
+}
+#circletable{
+    color: blue
+}
+#pagesearch{
+    border-width: 2px 2px 2px !important;
+    background-color: white !important;
+    border: 1px !important;
+    width: 30px;
+    margin-top: -5px;
+    color: black;
+}

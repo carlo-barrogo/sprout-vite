@@ -1,7 +1,7 @@
 import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../../../../scss/table.scss";
+// import "../../../../scss/table.scss";
 import {
   faCircleInfo,
   faBookmark,
@@ -74,69 +74,43 @@ const AnnouncementTable = () => {
       icon: "",
     },
   ];
-  // const tableData = [
-  //   {
-  //     title: "this is a very long title for the row row row row row ",
-  //     message: "sample message",
-  //     sentBy: "sample sentBy",
-  //     sentT: [{
-  //       bookmarked: true
-  //     },
-  //     {mobile:true}
 
-  //   ],
-  //     dateCreated: today,
-  //     startDate: today,
-  //     endDate: today,
-  //   },
-  //   {
-  //     title: "sample title",
-  //     message: "sample message",
-  //     sentBy: "sample sentBy",
-  //     sentT: [{
-  //       bookmarked: true
-  //     },
-  //     {mobile:false}
-
-  //   ],
-  //     dateCreated: today,
-  //     startDate: today,
-  //     endDate: today,
-  //   },
-  // ]
   return (
-    <div class="">
-      <div class="d-flex justify-content-between mb-2 ">
-        <div class="col">
-          <ul class="nav nav-pills ">
-            <li class="nav-item ">
+    <div className="">
+      <div className="d-flex justify-content-between mb-2 ">
+        <div className="col">
+          <ul className="nav nav-pills ">
+            <li className="nav-item ">
               <a
-                class="nav-link active text-success"
+                className="nav-link active text-success"
                 aria-current="page"
                 href="#one"
               >
-                <span class="badge bg-success">4</span> All
+                <span className="badge bg-success">10</span> All
               </a>
             </li>
-            <li class="nav-item ">
-              <a class="nav-link  text-success" aria-current="page" href="#two">
-                <span class="badge bg-warning">4</span> Drafts
+            <li className="nav-item ">
+              <a
+                className="nav-link  text-black"
+                aria-current="page"
+                href="#two"
+              >
+                <span className="badge bg-warning">10</span> Drafts
               </a>
             </li>
           </ul>
         </div>
-        <div class="d-flex gap-2 col-sm">
-          <select class="form-select  w-20 ">
+        <div className="d-flex gap-2 col-sm">
+          <select className="form-select  w-20 ">
             <option selected>Filter By</option>
             {filterChoices.map((fc) => (
               <option value={fc.value}>{fc.label}</option>
             ))}
           </select>
-          <div class="searchbartable form-outline w-100 d-flex flex-row-reverse ">
+          <div className="searchbartable form-outline w-100 d-flex flex-row-reverse ">
             <input
-              type="search"
               id="form1"
-              class="form-control"
+              className="headerinput form-control"
               placeholder="Search..."
               aria-label="Search"
             />
@@ -144,14 +118,14 @@ const AnnouncementTable = () => {
           </div>
         </div>
       </div>
-      <div class="tab-content">
-        <div class="border rounded " id="one">
-          <table class="table border table-hover">
+      <div className="tab-content">
+        <div className="border rounded " id="one">
+          <table className="table border table-hover">
             <thead>
               <tr>
                 {tableHeaders.map((th) => (
-                  <th scope="col ">
-                    <div class="d-flex gap-2">
+                  <th scope="col " key={th.title}>
+                    <div className="d-flex gap-2">
                       <p>{th.title}</p>
                       <i>{th.icon}</i>
                     </div>
@@ -177,12 +151,12 @@ const AnnouncementTable = () => {
                 });
 
                 return (
-                  <tr>
+                  <tr key={td.id}>
                     <td>{td.title}</td>
                     <td>{td.message}</td>
                     <td>{td.sentBy}</td>
                     <td>
-                      <div class="d-flex flex-row gap-2">
+                      <div className="d-flex flex-row gap-2">
                         {td.sentT.map((st) => {
                           if (st.bookmarked === true) {
                             return (
@@ -201,9 +175,9 @@ const AnnouncementTable = () => {
                         })}
                       </div>
                     </td>
-                    <td class="d-flex flex-column justify-content-center">
+                    <td className="d-flex flex-column justify-content-center">
                       <div>{setDateCreated}</div>
-                      <div class="text-secondary">{setTimeCreated}</div>
+                      <div className="text-secondary">{setTimeCreated}</div>
                     </td>
                     <td>{setStartDate}</td>
                     <td>{setEndDate}</td>
@@ -212,12 +186,12 @@ const AnnouncementTable = () => {
               })}
             </tbody>
           </table>
-          <div class="container">
-            <div class="d-flex justify-content-between mb-3">
-              <div class="d-flex gap-3 ">
-                <small class="sm-18">Items per page</small>
+          <div className="container-fluid">
+            <div className="d-flex justify-content-between mb-3">
+              <div className="d-flex gap-3 ">
+                <small className="sm-18">Items per page</small>
                 <div>
-                  <select class="form-select form-select-sm">
+                  <select className="form-select form-select-sm">
                     {filterChoicesItem.map((fc) => (
                       <option value={fc.value}>{fc.label}</option>
                     ))}
@@ -225,18 +199,43 @@ const AnnouncementTable = () => {
                 </div>
               </div>
 
-              <div class="d-flex justify-content-between">
+              <div className="pagenumber d-flex justify-content-between  gap-3">
+                <div>
+                  <p>
+                    <FontAwesomeIcon icon={faBackwardStep} />
+                  </p>
+                </div>
+                <div className="rotatedplay">
+                  <p>
+                    <FontAwesomeIcon icon={faPlay} />
+                  </p>
+                </div>
+                <div className="d-flex gap-2 ">
+                  <small>Page</small>
+                  <input className="pageinput " disabled value={1}></input>
+                  <small> of 1</small>
+                </div>
+                <div>
+                  <p>
+                    <FontAwesomeIcon icon={faPlay} />
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    <FontAwesomeIcon icon={faForwardStep} />
+                  </p>
+                </div>
                 {/* <div>
                   <FontAwesomeIcon icon={faBackwardStep} />
                 </div>
                 <div>
                   <FontAwesomeIcon icon={faPlay} />
                 </div>
-                <div class="d-flex justify-content-between">
+                <div className="d-flex justify-content-between">
                   <small>Page </small>
                   <input
                     id="pagesearch"
-                    class="form-control-sm"
+                    className="form-control-sm"
                     placeholder="Search..."
                     aria-label="Search"
                     value="1"
