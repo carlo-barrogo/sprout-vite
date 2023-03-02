@@ -6,7 +6,7 @@ function App({ children }) {
   return (
     <div>
       <Navbar />
-      <div class="mt-5 p-5">
+      <div className="mt-5 p-5">
         <Announcement />
       </div>
     </div>
